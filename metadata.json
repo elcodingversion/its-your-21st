@@ -1,0 +1,6 @@
+{
+  "name": "Teh Ana's 21st Birthday Journal",
+  "description": "An aesthetic vintage scrapbook birthday journal and heartfelt letter from Helma for Teh Ana's 21st birthday.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

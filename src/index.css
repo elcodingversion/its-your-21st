@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-handwriting {
+    font-family: 'Caveat', cursive;
+  }
+  .font-hand {
+    font-family: 'Patrick Hand', cursive;
+  }
+  .font-playful {
+    font-family: 'Shrikhand', cursive, sans-serif;
+  }
+  .font-typewriter {
+    font-family: 'Special Elite', monospace;
+  }
+}
+
+/* Polka dot fabric background */
+.bg-scrapbook-fabric {
+  background-color: #362217;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.22) 2px, transparent 2.5px),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px, 4px 4px, 4px 4px;
+}
+
+/* Paper texture effect */
+.bg-ivory-paper {
+  background-color: #fbf7ee;
+  background-image: radial-gradient(#ece4ce 0.75px, transparent 0.75px);
+  background-size: 12px 12px;
+}
+
+.bg-lined-paper {
+  background-color: #fdfaf2;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    #ebd5cb 28px
+  );
+}
+
+/* Washi tape effect */
+.washi-tape-pink {
+  background: rgba(248, 180, 192, 0.85);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  backdrop-filter: blur(0.5px);
+}
+
+.washi-tape-mint {
+  background: rgba(184, 224, 210, 0.85);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  backdrop-filter: blur(0.5px);
+}
+
+.washi-tape-yellow {
+  background: rgba(254, 235, 179, 0.9);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  backdrop-filter: blur(0.5px);
+}
+
+/* Scrapbook realistic shadow */
+.scrapbook-shadow {
+  box-shadow: 
+    0 12px 24px -6px rgba(35, 18, 10, 0.35),
+    0 4px 10px -2px rgba(35, 18, 10, 0.2),
+    inset 0 0 40px rgba(220, 200, 175, 0.25);
+}
+
+.scrapbook-shadow-deep {
+  box-shadow: 
+    0 20px 35px -8px rgba(25, 12, 6, 0.45),
+    0 6px 16px -2px rgba(25, 12, 6, 0.3);
+}
+
+/* Subtle paper pin / sticker lift */
+.sticker-pop {
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.15));
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sticker-pop:hover {
+  transform: scale(1.08) rotate(-2deg);
+}
